@@ -6,11 +6,11 @@
 
         <!--========== BOX ICONS ==========-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/scss/styles.css">
 
-        <title>Supreme Court of Bhutan</title>
+        <title>Monitoring Dashboard</title>
     </head>
     <body>
         <!--========== HEADER ==========-->
@@ -19,8 +19,7 @@
                 <img src="assets/img/logo.png" alt="" class="header__img">
 
                 <a href="#" class="header__logo">
-                    
-                    ༄༅།། དཔལ་འབྲུག་པའི་ཁྲིམས་ཀྱི་འདུན་ས།
+                    Monitoring and Evaluation Dashboard | CDRD
                 </a>
         
     
@@ -46,32 +45,11 @@
     
                     <div class="nav__list">
                         <div class="nav__items">
-                            <h3 class="nav__subtitle">Supreme Court</h3>
+                            <h3 class="nav__subtitle">Indicators</h3>
     
                             <a href="#" class="nav__link active">
                                 <i class='bx bx-home nav__icon' ></i>
-                                <span class="nav__name">Home</span>
-                            </a>
-                            
-                            <div class="nav__dropdown">
-                                <a href="#" class="nav__link">
-                                    <i class='bx bx-user nav__icon' ></i>
-                                    <span class="nav__name">About Us</span>
-                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
-                                </a>
-
-                                <div class="nav__dropdown-collapse">
-                                    <div class="nav__dropdown-content">
-                                        <a href="#" class="nav__dropdown-item">Organogram</a>
-                                        <a href="#" class="nav__dropdown-item">Vision & Mission</a>
-                                        <a href="#" class="nav__dropdown-item">Court Profile</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-message-rounded nav__icon' ></i>
-                                <span class="nav__name">Services</span>
+                                <span class="nav__name">About M & E</span>
                             </a>
                         </div>
     
@@ -80,43 +58,102 @@
                             <div class="nav__dropdown">
                                 <a href="#" class="nav__link">
                                     <i class='bx bx-bell nav__icon' ></i>
-                                    <span class="nav__name">Hearing Calendar</span>
+                                    <span class="nav__name">Living Standard</span>
                                     <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
                                 </a>
 
                                 <div class="nav__dropdown-collapse">
                                     <div class="nav__dropdown-content">
-                                        <a href="#" class="nav__dropdown-item">Supreme Court</a>
-                                        <a href="#" class="nav__dropdown-item">High Court</a>
-                                        <a href="#" class="nav__dropdown-item">Dzongkhag Court</a>
+                                        <a href="#" class="nav__dropdown-item">Income</a>
+                                        <a href="#" class="nav__dropdown-item">Housing</a>
+                                        <a href="#" class="nav__dropdown-item">Food Security</a>
+                                        <a href="#" class="nav__dropdown-item">Hardship</a>
                                     </div>
                                 </div>
 
                             </div>
 
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-compass nav__icon' ></i>
-                                <span class="nav__name">News & Notification</span>
-                            </a>
-                            <div class="nav__items">
-                            
-                                <div class="nav__dropdown">
-                                    <a href="#" class="nav__link">
-                                        <i class='bx bx-book nav__icon' ></i>
-                                        <span class="nav__name">Publication</span>
-                                        <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
-                                    </a>
-    
-                                    <div class="nav__dropdown-collapse">
-                                        <div class="nav__dropdown-content">
-                                            <a href="#" class="nav__dropdown-item">Annual Report</a>
-                                            <a href="#" class="nav__dropdown-item">Strategic Plan</a>
-                                            <a href="#" class="nav__dropdown-item">Application</a>
-                                        </div>
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bxs-book nav__icon' ></i>
+                                    <span class="nav__name">Education</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Education Attainment</a>
+                                        <a href="#" class="nav__dropdown-item">Dzongkha Language</a>
                                     </div>
-    
                                 </div>
-                        </div>
+
+                            </div>
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bxs-location-plus nav__icon' ></i>
+                                    <span class="nav__name">Health</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Health Status</a>
+                                        <a href="#" class="nav__dropdown-item">Health Knowledge</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-bell nav__icon' ></i>
+                                    <span class="nav__name">Community Vitality</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Family Vitality</a>
+                                        <a href="#" class="nav__dropdown-item">Safety</a>
+                                        <a href="#" class="nav__dropdown-item">Kinship Density</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bxs-tree nav__icon' ></i>
+                                    <span class="nav__name">Environment</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Air Quality</a>
+                                        <a href="#" class="nav__dropdown-item">Water Quality</a>
+                                        <a href="#" class="nav__dropdown-item">Ecological Knowledge</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bxs-institution nav__icon' ></i>
+                                    <span class="nav__name">Governmnet</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Government Performance Freedom</a>
+                                        <a href="#" class="nav__dropdown-item">Institutional Trust</a>
+                                    </div>
+                                </div>
+
+                            </div>
                     </div>
                 </div>
 
@@ -130,97 +167,24 @@
         <!--========== CONTENTS ==========-->
         <main>
             <section class="intro">
-                <h4 style="text-align: center;">Vision & Mission</h4>
-                <p style="text-align: center;">"Safeguard, uphold, and administer Justice fairly and independently without fear, 
-                    favor,or undue delay in accordance with the Rule of Law to inspire trust 
-                    and confidence and to enhance access to Justice".</p>
 
-                    
+              <div class="main-container">
+                <div class="map" id="map">
 
-                    <div class="band">
-                        <div class="item-1">
-                          <a href="#" class="card">
-                            <div class="thumb" style="background-image: url('/assets/img/1.jpg');">
-                                <img src="/assets/img/1.jpg" alt="">
-                            </div>
-                            <article>
-                              <h1>Appointment of four Drangpon Rabjams.</h1>
-                              <span>The Hon’ble Chief Justice of Bhutan appointed four Senior Court Registrars as
-                                   Drangpon Rabjam today at the Supreme Court of Bhutan. <strong>..read more</strong> </span>
-                            </article>
-                          </a>
-                        </div>
-                       
-                        <div class="item-2">
-                            <a href="#" class="card">
-                              <div class="thumb" style="background-image: url('/assets/img/1.jpg');">
-                                  <img src="/assets/img/2.jpg" alt="">
-                              </div>
-                              <article>
-                                <h1>Launch of Annual Judicary Report 2020.</h1>d Ven. Sungkhob launched the Annual Judiciary Report for the year 2020. Limited copies are circulated and the copy of the .
-                                <span>TThe Chief Justice of Bhutan an <strong>..read more</strong> </span>
-                              </article>
-                            </a>
-                          </div>
+                </div>
 
-                          <div class="item-3">
-                            <a href="#" class="card">
-                              <div class="thumb" style="background-image: url('/assets/img/1.jpg');">
-                                  <img src="/assets/img/1.jpg" alt="">
-                              </div>
-                              <article>
-                                <h1>Appointment of four Drangpon Rabjams.</h1>
-                                <span>The Hon’ble Chief Justice of Bhutan appointed four Senior Court Registrars as
-                                     Drangpon Rabjam today at the Supreme Court of Bhutan. <strong>..read more</strong> </span>
-                              </article>
-                            </a>
-                          </div>
+                <div class="info">
+                    <p>
+                        Monitoring and Evaluation Framework for Spatil Plans in Bhutan
+                    </p>
 
-                          <div class="item-4">
-                            <a href="#" class="card">
-                              <div class="thumb" style="background-image: url('/assets/img/1.jpg');">
-                                  <img src="/assets/img/1.jpg" alt="">
-                              </div>
-                              <article>
-                                <h1>Appointment of four Drangpon Rabjams.</h1>
-                                <span>The Hon’ble Chief Justice of Bhutan appointed four Senior Court Registrars as
-                                     Drangpon Rabjam today at the Supreme Court of Bhutan. <strong>..read more</strong> </span>
-                              </article>
-                            </a>
-                          </div>
-
-                          <div class="item-5">
-                            <a href="#" class="card">
-                              <div class="thumb" style="background-image: url('/assets/img/1.jpg');">
-                                  <img src="/assets/img/1.jpg" alt="">
-                              </div>
-                              <article>
-                                <h1>Appointment of four Drangpon Rabjams.</h1>
-                                <span>The Hon’ble Chief Justice of Bhutan appointed four Senior Court Registrars as
-                                     Drangpon Rabjam today at the Supreme Court of Bhutan. <strong>..read more</strong> </span>
-                              </article>
-                            </a>
-                          </div>
-
-                          <div class="item-6">
-                            <a href="#" class="card">
-                              <div class="thumb" style="background-image: url('/assets/img/1.jpg');">
-                                  <img src="/assets/img/1.jpg" alt="">
-                              </div>
-                              <article>
-                                <h1>Appointment of four Drangpon Rabjams.</h1>
-                                <span>The Hon’ble Chief Justice of Bhutan appointed four Senior Court Registrars as
-                                     Drangpon Rabjam today at the Supreme Court of Bhutan. <strong>..read more</strong> </span>
-                              </article>
-                            </a>
-                          </div>
-                      </div>
-
-                    
+                </div>
+              </div>                    
             </section>
         </main>
 
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     </body>
 </html>

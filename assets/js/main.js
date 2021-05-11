@@ -7,6 +7,35 @@ const showMenu = (headerToggle, navbarId) =>{
     if(headerToggle && navbarId){
         toggleBtn.addEventListener('click', ()=>{
             // We add the show-menu class to the div tag with the nav__menu class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
             nav.classList.toggle('show-menu')
             // change icon
             toggleBtn.classList.toggle('bx-x')
@@ -24,3 +53,6 @@ function colorLink(){
 }
 
 linkColor.forEach(l => l.addEventListener('click', colorLink))
+
+var mymap = L.map('map').setView([51.505, -0.09], 13);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}').addTo(mymap);

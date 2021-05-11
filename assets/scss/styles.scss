@@ -241,6 +241,33 @@ img{
     color: var(--first-color);
 }
 
+
+/**home page*/
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+
+    .map{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+        height: calc(100vh - 6rem);  
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+        background-color: lightpink;
+        height: calc(100vh - 6rem);        
+    }
+}
+
+#map{
+    height: 100vh;
+}
+
+
 /* ========== MEDIA QUERIES ==========*/
 /* For small devices reduce search*/
 @media screen and (max-width: 320px){
